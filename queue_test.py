@@ -10,7 +10,7 @@ cid ='f694f6f7a1584567948f99d653a9d070'
 secret = '0e05c9eeee094a5d8d506d0435a18ee9' 
 
 #Spotify Username
-username = 'uu9pzuu0y10fu0f5dx2210xb5' 
+username = '22supsxyw37giydcor4utlowq' 
 
 #For avaliable scopes see https://developer.spotify.com/web-api/using-scopes/
 #Current scope allows for modifying playback.
