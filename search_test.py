@@ -33,17 +33,32 @@ if token:
     #Store search results in a dictionary
     song_directory = {}
     #Search query
-    q = input("What song do you want to search?")
+    q = input("What song do you want to search? ")
     search_results = sp.search(q, type='track')
     tracks = search_results['tracks']['items']
 
     #Add artist and trfack names to search directory
     for id in range(len(tracks)):
+        #Store artist name :: string
         artist_name = tracks[id]['artists'][0]['name']
+        #Store track name
         track_name = tracks[id]['name']
-        song_directory[id] = artist_name + " - " + track_name
+        #Store track ID
+        track_id = tracks[id]['id']
+        #Of type num: (id, name)
+        song_directory[id] = (track_id, artist_name + " - " + track_name)
     
     #Print Results
     for id in song_directory.keys():
-        print(str(id) + ": " + song_directory[id])
+        print(str(id) + ": " + song_directory[id][1])
     
+    #Get which song number is being played
+    play_track_num = input("Which song you do want to play? (Enter the ID #):  ")
+    #Lookup ID
+    play_track_id = song_directory[int(play_track_num)][0]
+    #Play song
+    tracks = []
+    tracks.append("spotify:track:" + play_track_id)
+    sp.start_playback(uris = tracks)
+
+
