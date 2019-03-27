@@ -56,6 +56,7 @@ if token:
     play_track_num = input("Which song you do want to play? (Enter the ID #):  ")
     #Lookup ID
     play_track_id = song_directory[int(play_track_num)][0]
+    print(play_track_id)
     #Play song
     tracks = []
     tracks.append("spotify:track:" + play_track_id)
