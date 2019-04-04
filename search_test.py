@@ -16,7 +16,7 @@ username = '22supsxyw37giydcor4utlowq'
 scope = 'user-modify-playback-state'
 
 #Once you run the script, copy and paste the link you are redirected to into the terminal.
-redirect_uri='http://localhost/' 
+redirect_uri='http://127.0.0.1:8000/catalog/'
 
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret) 
 
