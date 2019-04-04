@@ -1,6 +1,9 @@
 # Spotify API Test
 
 
+## Requirements
+- You need python3. 
+- You need to install spotipy from the github source. The version provided by pip is deprecated. Run `pip install git+https://github.com/plamere/spotipy.git --upgrade` to upgrade your version of spotipy.
 ## Getting Started
 Put your Spotify Web API keys in  `spotify_test.py` and `search_test.py`. You also need to enter your spotify username, which can be found in `https://www.spotify.com/us/account/overview/`.
 
